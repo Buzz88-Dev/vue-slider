@@ -102,8 +102,10 @@ const root = new Vue ({
             console.log(this.activeSlide);
         },
 
-        thisSlide(id){
-            this.activeSlide = id;
+        thisSlide(i){
+            this.activeSlide = i;
+            console.log(this.activeSlide);
+            // pongo activeSlide = i; ovvero la posizione dell immagine contenuta nell array
         }
     }
 })
