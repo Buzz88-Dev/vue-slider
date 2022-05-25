@@ -33,7 +33,8 @@
                     <div v-for="(element, i) in slides" 
                     class="thumb"
                     :class="(i === activeSlide) ? 'active' : ' ' " 
-                    :key="i">
+                    :key="i"
+                    @click="thisSlide(i)">
                         <img :src="element.image" :alt="element.title"/>
                     </div>
                 </div>
@@ -48,3 +49,4 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+
