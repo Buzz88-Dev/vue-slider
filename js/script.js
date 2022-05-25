@@ -100,6 +100,10 @@ const root = new Vue ({
                 this.activeSlide = this.slides.length - 1;
             }
             console.log(this.activeSlide);
+        },
+
+        thisSlide(id){
+            this.activeSlide = id;
         }
     }
 })
