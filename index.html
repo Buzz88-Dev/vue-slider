@@ -30,7 +30,10 @@
                 <div class="thumbs">
                     <div class="prev"></div>
                     <div class="next"></div>
-                    <div v-for="(element, i) in slides" class="thumb" :key="i">
+                    <div v-for="(element, i) in slides" 
+                    class="thumb"
+                    :class="i === activeSlide ? 'active' : ' ' " 
+                    :key="i">
                         <img :src="element.image" :alt="element.title"/>
                     </div>
                     <!-- <div class="thumb">
