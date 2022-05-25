@@ -35,6 +35,7 @@
                     :class="(i === activeSlide) ? 'active' : ' ' " 
                     :key="i"
                     @click="thisSlide(i)">
+                    <!-- con la funzione this.slide() io clicco sull immagine e passo come argomento la posizione di i -->
                         <img :src="element.image" :alt="element.title"/>
                     </div>
                 </div>
